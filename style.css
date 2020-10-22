@@ -151,27 +151,27 @@ img{
     line-height: 1.1;
 }
 .contextCourse{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
 }
 .contextCourse li{
     width: 500px;
 }
 .gpa{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
 }
 
 /*Seminar*/
 .contextSeminar{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 16px;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    margin-top: 16px !important;
 }
 .contextSeminar li{
     width:200px;
@@ -190,10 +190,10 @@ img{
 
 /*Language*/
 .contextLanguage{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: start;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: start !important;
 }
 .contextLanguage li{
     width:300px;
