@@ -86,12 +86,10 @@ p{
     margin-bottom: 24px;
     width: 500px;
 }
-.box{
-    margin-bottom: 40px !important;
-}
+
 .container{
-    width: 1200px;
-    margin: 0 auto;
+    width: 1200px ;
+    margin: 0 auto !important;
 }
 .date,.achievements ,.course, .gpa, .languageLevel{
     color: #cd5658;
@@ -106,16 +104,48 @@ p{
 
 /*title*/
 .title{
-    margin-top: 50px;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
 }
 .icon{
     color: #cd5658;
     margin-right:16px;
 }
-/*description*/
+
+@media (max-width:767px){
+    .container{
+        margin: 0 auto !important;
+    }
+    .description{
+        background-color: #cd5658;
+        padding: 20px;
+        margin: 30px 0;
+    }
+    .description h1{
+        font-size:70px !important;
+        text-align: center;
+    }
+    .description h2{
+        font-size: 20px !important;
+        line-height: 28px !important;
+        text-align: center;
+        border-bottom: 3px solid white;
+        margin-bottom: 20px;
+        color: white;
+    }
+    .description p{
+        font-size: 16px !important;
+        color: white;
+        text-align: justify;
+    }
+
+}
+
 .description{
     background-color: #cd5658;
     padding: 20px;
+    margin: 30px 0;
 }
 .description h2{
     border-bottom: 3px solid white;
@@ -123,8 +153,7 @@ p{
     color: white;
 }
 img{
-    width: 200px;
-    margin-right: 50px;
+    margin-top: 30px;
 }
 
 
@@ -177,6 +206,9 @@ img{
     width:200px;
     margin-right: 50px;
 }
+.contextSeminar li:nth-child(1){
+    font-weight: bolder !important;
+}
 .contextSeminar li:nth-child(2){
     width:300px;
 }
@@ -197,4 +229,19 @@ img{
 .contextLanguage li{
     width:300px;
     margin-right: 30px;
+}
+
+
+/*Interest*/
+.interestContext, .skilltContext{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: start !important;
+    flex-wrap: wrap;
+}
+.interestContext li , .skilltContext li{
+    border: 2px solid #71717d;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-right: 10px;
 }
