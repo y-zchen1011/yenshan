@@ -123,7 +123,8 @@ p{
     color: white;
 }
 img{
-    width: 200px;
+    width: 200px !important;
+    height: 200px !important;
     margin-right: 50px;
 }
 
