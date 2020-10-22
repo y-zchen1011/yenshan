@@ -114,16 +114,12 @@ p{
 }
 
 @media (max-width:767px){
-    .container{
-        margin: 0 auto !important;
-    }
     .description{
         background-color: #cd5658;
         padding: 20px;
-        margin: 30px 0;
     }
     .description h1{
-        font-size:70px !important;
+        font-size: 70px !important;
         text-align: center;
     }
     .description h2{
