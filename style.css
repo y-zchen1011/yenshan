@@ -1,0 +1,201 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body{
+    font-family: "Century Gothic" !important;
+}
+h1{
+    font-size: 72px !important;
+}
+h2{
+    font-size: 40px !important;
+    font-weight: normal;
+    color: #cd5658;
+    border-bottom: 3px solid #cd5658;
+}
+h3{
+    font-size: 32px!important;
+    color: #cd5658;
+}
+h4{
+    font-size: 28px!important;
+}
+p{
+    font-size: 24px;
+}
+.list{
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.list li{
+    margin-bottom: 24px;
+    width: 500px;
+}
+.box{
+    margin-bottom: 40px !important;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.date,.achievements ,.course, .gpa, .languageLevel{
+    color: #cd5658;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+/*title*/
+.title{
+    margin-top: 50px;
+}
+.icon{
+    color: #cd5658;
+    margin-right:16px;
+}
+/*description*/
+.description{
+    background-color: #cd5658;
+    padding: 20px;
+}
+.description h2{
+    border-bottom: 3px solid white;
+    margin-bottom: 20px;
+    color: white;
+}
+img{
+    width: 200px;
+    margin-right: 50px;
+}
+
+
+/*Career*/
+.career p{
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+.career .companyName, .volunteer .companyName{
+    color: #71717d;
+    font-style: italic;
+}
+.contextAchievements, .contextCourse{
+    list-style:square;
+    margin-left: 20px;
+}
+.contextAchievements li, .contextCourse li{
+    margin-bottom: 5px;
+}
+
+/*Education*/
+.education p{
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+.contextCourse{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contextCourse li{
+    width: 500px;
+}
+.gpa{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*Seminar*/
+.contextSeminar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+.contextSeminar li{
+    width:200px;
+    margin-right: 50px;
+}
+.contextSeminar li:nth-child(2){
+    width:300px;
+}
+
+/*volunteer*/
+.volunteer p{
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+
+/*Language*/
+.contextLanguage{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.contextLanguage li{
+    width:300px;
+    margin-right: 30px;
+}
