@@ -53,8 +53,11 @@ table {
     border-spacing: 0;
 }
 
+
+
+/*Global*/
 body{
-    font-family: "Century Gothic" !important;
+    font-family: 'Roboto Slab', serif !important;
 }
 h1{
     font-size: 72px !important;
@@ -62,15 +65,16 @@ h1{
 h2{
     font-size: 40px !important;
     font-weight: normal;
-    color: #cd5658;
-    border-bottom: 3px solid #cd5658;
+    color: #0074a0;
+    border-bottom: 3px solid #0074a0;
 }
 h3{
     font-size: 32px!important;
-    color: #cd5658;
+    color: #0074a0;
+    font-weight: bolder;
 }
 h4{
-    font-size: 28px!important;
+    font-size: 26px!important;
 }
 p{
     font-size: 24px;
@@ -84,69 +88,52 @@ p{
 }
 .list li{
     margin-bottom: 24px;
-    width: 500px;
+    width: 50%;
+}
+.list li:nth-child(5){
+    width:50%;
 }
 
-.container{
-    width: 1200px ;
-    margin: 0 auto !important;
+
+.dateAndPlace{
+    display: flex;
+    justify-content:space-between;
+    font-size:17px;
+    color: #0074a0;
 }
-.date,.achievements ,.course, .gpa, .languageLevel{
-    color: #cd5658;
+
+.achievements ,.course, .languageLevel{
+    color: #0074a0;
     font-style: italic;
+    font-size: 20px;
 }
-
-
-
-
-
+.languageLevel{
+    font-size: 16px;
+}
 
 
 /*title*/
 .title{
-    display: flex !important;
-    flex-direction: row !important;
+    display: flex ;
+    justify-content:space-between;
     flex-wrap: wrap !important;
 }
 .icon{
-    color: #cd5658;
+    color: #0074a0;
     margin-right:16px;
 }
-
-@media (max-width:767px){
-    .description{
-        background-color: #cd5658;
-        padding: 20px;
-    }
-    .description h1{
-        font-size: 70px !important;
-        text-align: center;
-    }
-    .description h2{
-        font-size: 20px !important;
-        line-height: 28px !important;
-        text-align: center;
-        border-bottom: 3px solid white;
-        margin-bottom: 20px;
-        color: white;
-    }
-    .description p{
-        font-size: 16px !important;
-        color: white;
-        text-align: justify;
-    }
-
-}
-
 .description{
-    background-color: #cd5658;
+    background-color: #0074a0;
     padding: 20px;
     margin: 30px 0;
+    width: 799px;
 }
 .description h2{
-    border-bottom: 3px solid white;
     margin-bottom: 20px;
     color: white;
+}
+.underline{
+    border-bottom: 3px solid white;
 }
 
 
@@ -156,16 +143,24 @@ p{
     margin-bottom: 10px;
     line-height: 1.1;
 }
-.career .companyName, .volunteer .companyName{
+.companyDescription{
     color: #71717d;
-    font-style: italic;
+    font-size: 17px;
 }
 .contextAchievements, .contextCourse{
-    list-style:square;
+    list-style:none;
     margin-left: 20px;
+    font-size: 20px;
 }
 .contextAchievements li, .contextCourse li{
     margin-bottom: 5px;
+}
+.contextAchievements li::before, .contextCourse li::before{
+    content: "□";
+    color: #0074a0;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em
 }
 
 /*Education*/
@@ -182,12 +177,7 @@ p{
 .contextCourse li{
     width: 500px;
 }
-.gpa{
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-    justify-content: space-between !important;
-}
+
 
 /*Seminar*/
 .contextSeminar{
@@ -223,10 +213,15 @@ p{
 .contextLanguage li{
     width:300px;
     margin-right: 30px;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 
 /*Interest*/
+.interest{
+    height: 500px;
+}
 .interestContext, .skilltContext{
     display: flex !important;
     flex-direction: row !important;
@@ -237,6 +232,98 @@ p{
     border: 2px solid #71717d;
     border-radius: 10px;
     padding: 5px 10px;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin: 10px 10px 10px 0;
+}
+
+
+/*Skills*/
+.skilltContext li{
+    border: 2px solid #0074a0;
+    background-color: #0074a0;
+    color: #fff;
+}
+
+
+/*RWD*/
+@media (max-width:767px) {
+    .list{
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+    }
+    .list li{
+        margin-bottom: 24px;
+        width: 500px;
+    }
+    .list li:nth-child(5){
+        width: 500px;
+    }
+    .description{
+        background-color: #0074a0;
+        padding: 20px;
+        margin: 30px 0;
+        width: 799px;
+    }
+    .description h1{
+        text-align: center;
+    }
+    .description h2{
+        font-size: 40px !important;
+        margin-bottom: 20px;
+        color: white;
+    }
+    .description p{
+        text-align: justify;
+    }
+    .break{
+        word-wrap:break-word
+    }
+}
+@media (min-width:768px)and (max-width: 1199px) {
+    .list{
+        font-size: 24px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .list li{
+        margin-bottom: 24px;
+        width: 50%;
+    }
+    .list li:nth-child(5){
+        width:50%;
+    }
+    .title{
+        padding-top: 40px!important;
+        display: flex;
+        justify-content:space-between;
+    }
+    .description{
+        background-color: #0074a0;
+        padding: 20px;
+        margin: 30px 0;
+        width: 70%;
+    }
+    .description h1{
+        text-align: center;
+    }
+    .description h2{
+        font-size: 40px !important;
+        margin-bottom: 20px;
+        color: white;
+        text-align: center;
+    }
+    .description p{
+        text-align: justify;
+    }
+    .contextCourse{
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+    }
+    .contextCourse li{
+        width: 50%;
+    }
 }
