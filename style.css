@@ -253,10 +253,10 @@ p{
     }
     .list li{
         margin-bottom: 24px;
-        width: 500px;
+        width: 767px;
     }
     .list li:nth-child(5){
-        width: 500px;
+        width: 767px;
     }
     .description{
         background-color: #0074a0;
